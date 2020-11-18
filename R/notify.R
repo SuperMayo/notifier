@@ -2,8 +2,7 @@
 #' Create a desktop notification
 #'
 #' How exactly the notification appears is platform dependent:
-#' * On macOS, we use the `terminal-notifier` tool, see
-#'   https://github.com/julienXX/terminal-notifier
+#' * On macOS, we use the `AppleScript`.
 #' * On Linux and *BSD systems, including Solaris the `notify-send`
 #'   command line tool is used. This requires the `libnotify-bin`
 #'   package on Ubuntu/Debian and similar systems, or the `libnotify`
@@ -24,7 +23,7 @@
 #'   on other OSes, because of licensing reasons. You can specify a PNG
 #'   file here, to show instead of the R logo. This currently does not
 #'   work on older Windows versions (before Windows 8), which does not
-#'   allow PNG files, only ICO icons.
+#'   allow PNG files, only ICO icons, and in macOS.
 #'
 #' @export
 #' @examples

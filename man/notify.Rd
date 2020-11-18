@@ -17,13 +17,12 @@ official R logo is shown on macOS, and an alternative logo is shown
 on other OSes, because of licensing reasons. You can specify a PNG
 file here, to show instead of the R logo. This currently does not
 work on older Windows versions (before Windows 8), which does not
-allow PNG files, only ICO icons.}
+allow PNG files, only ICO icons, and in macOS.}
 }
 \description{
 How exactly the notification appears is platform dependent:
 \itemize{
-\item On macOS, we use the \code{terminal-notifier} tool, see
-https://github.com/julienXX/terminal-notifier
+\item On macOS, we use the \code{AppleScript}.
 \item On Linux and *BSD systems, including Solaris the \code{notify-send}
 command line tool is used. This requires the \code{libnotify-bin}
 package on Ubuntu/Debian and similar systems, or the \code{libnotify}
